@@ -1,0 +1,50 @@
+@(title: String)(content: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Play24 Swagger</title>
+        <link rel='stylesheet' href='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.css"))' />
+    </head>
+    <body role="document">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Play24 Swagger</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <a href="https://github.com/lcamilo15/play24-swagger-example"><img style="position: absolute; top: 0; right: 0; border: 0; z-index:10000" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+        <div class="container theme-showcase" role="main">
+            <div class="jumbotron">
+                <h3>Play24 Swagger UI responsive theme</h3>
+                <p>This is a forked version of the <a href="https://github.com/jensoleg/swagger-ui">Swagger UI responsive theme</a> With inspiration from the Auth0 api explorer the original Swagger UI repo is modified to use a responsive layout.</p>
+            </div>
+            <div class="alert alert-warning">
+                <strong>Disclaimer!</strong> As estated in the Swagger UI project, This is not a fully polished implementation and should be used with care..
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-6">
+                    <h2>Play Swagger Explorer</h2>
+                    <p class="lead">Uses Play Swagger UI Explorer</p>
+                    <p>This example of Swagger uses  <a href="https://github.com/jensoleg/swagger-ui">Swagger UI Explorer</a> created by jansonleg.</p>
+
+                </div>
+                <div class="col-xs-6 col-sm-6">
+                    <div class="row">
+                        <a href="@com.luiscamilo.swagger.controllers.routes.Swagger.apiDocs()">
+                            <img src="@routes.Assets.versioned("images/preview.png")" class="col-xs-12"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </body>
+</html>

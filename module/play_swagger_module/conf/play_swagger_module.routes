@@ -1,0 +1,7 @@
+
+#API Docs
+GET        /api-docs                    @com.luiscamilo.swagger.controllers.Swagger.apiDocs()
+
+GET        /api-docs.json               @pl.matisoft.swagger.ApiHelpController.getResources
+
+GET        /api-docs/assets/*file       @com.luiscamilo.swagger.controllers.Assets.versioned(path="/public/lib/play_swagger_module", file)
